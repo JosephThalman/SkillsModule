@@ -29,6 +29,9 @@ public class Calculator {
 			case 3:
 				multiply();
 				break;
+			case 4:
+				divide();
+				break;
 			default:
 				System.out.println("Error: Unsupported operation.");
 				break;
@@ -93,6 +96,18 @@ public class Calculator {
 		int result = operand1 * operand2;
 
 		System.out.println(operand1 + " * " + operand2 + " = " + result);
+	}
+
+	public static void divide() {
+		promptOperands('/');
+		
+		// Collect user input
+		int operand1 = scanner.nextInt();
+		int operand2 = scanner.nextInt();
+
+		float result = (float)operand1 / operand2;
+
+		System.out.printf("%d / %d = %.2f\n", operand1, operand2, result);
 	}
 
 }
