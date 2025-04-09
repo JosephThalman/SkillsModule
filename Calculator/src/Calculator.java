@@ -18,9 +18,13 @@ public class Calculator {
 		// Display U
 		int operation = getOperation();
 
+		// Perfrm operation
 		switch(operation) {
 			case 1:
 				add();
+				break;
+			case 2:
+				subtract();
 				break;
 			default:
 				System.out.println("Error: Unsupported operation.");
@@ -62,6 +66,18 @@ public class Calculator {
 		int result = operand1 + operand2;
 
 		System.out.println(operand1 + " + " + operand2 + " = " + result);
+	}
+
+	public static void subtract() {
+		promptOperands('-');
+		
+		// Collect user input
+		int operand1 = scanner.nextInt();
+		int operand2 = scanner.nextInt();
+
+		int result = operand1 - operand2;
+
+		System.out.println(operand1 + " - " + operand2 + " = " + result);
 	}
 
 }
