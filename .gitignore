@@ -1,3 +1,7 @@
+# Custome .gitignore additions
+.metadata/
+
+# Default Generated .gitignore for Java files
 # Compiled class file
 *.class
 

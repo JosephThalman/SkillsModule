@@ -1,0 +1,7 @@
+# Object (.class) files directory
+/bin/
+
+# IDE-specific files that do not belong on GitHub
+/.classpath
+/.project
+/.settings/
