@@ -16,3 +16,7 @@ Pull requests must be closed by the repository owner to be merged.
 To run the program, open the project in any JVM-friendly IDE and execute the Calculator.java file. 
 Interact with the program via the console. 
 
+## Release version
+Release version 1.0
+Currently supports a single operation with 2 operands.
+
