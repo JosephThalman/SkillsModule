@@ -2,6 +2,6 @@
 /bin/
 
 # IDE-specific files that do not belong on GitHub
-./.classpath
-./.project
-./.settings/
+/.classpath
+/.project
+/.settings/
