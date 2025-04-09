@@ -20,7 +20,7 @@ public class Calculator {
 
 		switch(operation) {
 			case 1:
-				//add();
+				add();
 				break;
 			default:
 				System.out.println("Error: Unsupported operation.");
@@ -50,6 +50,18 @@ public class Calculator {
 
 	public static void promptOperands(char operand) {
 		System.out.println("Enter operands (x " + operand + " y):");
+	}
+
+	public static void add() {
+		promptOperands('+');
+		
+		// Collect user input
+		int operand1 = scanner.nextInt();
+		int operand2 = scanner.nextInt();
+
+		int result = operand1 + operand2;
+
+		System.out.println(operand1 + " + " + operand2 + " = " + result);
 	}
 
 }
